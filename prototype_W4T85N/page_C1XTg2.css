@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Federant&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+* {
+  font-family: 'Space Grotesk';
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.css_AoRiHW {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: .5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.css_P4nVEF {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.css_lOiU39 {
+  border-radius: 50%;
+}
+
+.css_Fpnzid {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.css_ez0Jgw {
+  display: flex;
+  gap: 1rem;
+}
+
+.css_ez0Jgw span {
+  vertical-align: middle;
+  font-size: .75rem;
+}
+
+.css_ez0Jgw img {
+  vertical-align: middle;
+}
+
+.css_u9EkLh {
+  display: flex;
+  /* border: 1px solid; */
+  gap: 1rem;
+}
+
+.css_SY2J87 {
+  border-radius: 50%;
+  height: fit-content;
+  align-self: center;
+}
+
+.css_SWb84z {
+  font-size: .75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.css_zB25ua {
+  flex-grow: 1;
+}
+
+.css_SX64mw {
+  margin: 1rem 0;
+}
+
+.css_sDdznu {
+  display: flex;
+  margin-top: 1rem;
+  overflow: auto;
+  gap: .5rem;
+  padding: 1rem;
+}
+
+.css_sDdznu img {
+  border-radius: 1rem;
+}
+
+.css_BU5nM0 {
+  max-width: 90%;
+  margin: 2rem auto;
+  /* border: 1px solid; */
+  box-shadow: 0 0 1rem #aaa;
+  border-radius: .5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .css_BU5nM0 {
+    box-shadow: none;
+    background-color: #1b1b1b;
+  }
+}
+
+.css_BU5nM0>* {
+  padding: 1rem;
+}
+
+.css_NnQu1w {
+  padding: 1rem 0;
+}
