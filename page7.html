@@ -51,6 +51,10 @@
       font-family: 'Space Grotesk';
     }
 
+    html {
+      color-scheme: light dark;
+    }
+
     .css_sOo41J {
       width: fit-content;
       padding: 1rem;
@@ -115,7 +119,7 @@
       font-size: 1rem;
       outline: 0;
       border-radius: .5rem;
-      border: 1px solid #ccc;
+      border: 2px solid #ccc;
       resize: vertical;
     }
 
@@ -137,7 +141,7 @@
     }
 
     input[type=text] {
-      border: 1px solid #ccc;
+      border: 2px solid #ccc;
       outline: 0;
       border-radius: .5rem;
     }
@@ -152,6 +156,15 @@
       background-color: #fff;
       padding: 0 .5rem;
     }
+
+    @media (prefers-color-scheme: dark) {
+      .hide_placeholder {
+        top: -8px;
+        transform: scale(.8);
+        background-color: #1b1b1b;
+        padding: 0 .5rem;
+      }
+    }
   </style>
 
   <script>
@@ -160,7 +173,7 @@
       document.querySelector('.css_VHp8wJ').classList.add('hide_placeholder')
     })
     document.querySelector('.css_FSp9ui').addEventListener('blur', function (e) {
-      if(e.target.value) return
+      if (e.target.value) return
       document.querySelector('.css_VHp8wJ').classList.remove('hide_placeholder')
     })
 
@@ -169,7 +182,7 @@
       document.querySelector('.css_ZsC2Dz').classList.add('hide_placeholder')
     })
     document.querySelector('.css_k1PtQv').addEventListener('blur', function (e) {
-      if(e.target.value) return
+      if (e.target.value) return
       document.querySelector('.css_ZsC2Dz').classList.remove('hide_placeholder')
     })
 
@@ -178,7 +191,7 @@
       document.querySelector('.css_NXb48w').classList.add('hide_placeholder')
     })
     document.querySelector('.css_HhTfAl').addEventListener('blur', function (e) {
-      if(e.target.value) return
+      if (e.target.value) return
       document.querySelector('.css_NXb48w').classList.remove('hide_placeholder')
     })
 
@@ -187,7 +200,7 @@
       document.querySelector('.css_eQAQQy').classList.add('hide_placeholder')
     })
     document.querySelector('.css_LLhob1').addEventListener('blur', function (e) {
-      if(e.target.value) return
+      if (e.target.value) return
       document.querySelector('.css_eQAQQy').classList.remove('hide_placeholder')
     })
 
