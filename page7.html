@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form class="css_sOo41J">
+    <div class="css_XZ71v8">Basic Information</div>
+    <div class="css_wyaf4c">
+      <div class="css_f5dlvL">
+        <div class="css_VHp8wJ">Firstname</div>
+        <input class="css_FSp9ui" type="text" name="firstname" />
+      </div>
+      <div class="css_Gl7eB7">
+        <div class="css_ZsC2Dz">Lastname</div>
+        <input class="css_k1PtQv" type="text" name="lastname" />
+      </div>
+    </div>
+    <div class="css_dVi171">
+      <div class="css_NXb48w">Email</div>
+      <input class="css_HhTfAl" type="text" name="email" />
+    </div>
+    <div class="css_m69EV0">
+      <div class="css_eQAQQy">Message</div>
+      <textarea class="css_LLhob1" name="message"></textarea>
+    </div>
+    <!-- image -->
+    <div class="css_Lj02kl">
+      <span class="css_sO6g5G">Image</span> <input class="css_qMit1Z" type="file" accept="image/*" />
+    </div>
+    <!-- video -->
+    <div class="css_slf0SE">
+      <span class="css_ED2Ka1">Video</span> <input class="css_o1BmXT" type="file" accept="video/mp4" />
+    </div>
+    <!-- audio -->
+    <div class="css_umVg0c">
+      <span class="css_Hx7Te8">Audio</span> <input class="css_g605V2" type="file" accept="audio/mp3" />
+    </div>
+    <button class="css_sSa732">Send Message</button>
+  </form>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Federant&family=Space+Grotesk:wght@300..700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Space Grotesk';
+    }
+
+    .css_sOo41J {
+      width: fit-content;
+      padding: 1rem;
+      border-radius: .5rem;
+      box-shadow: 0 0 .5rem #999;
+    }
+
+    .css_XZ71v8 {
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .css_wyaf4c {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .css_f5dlvL,
+    .css_Gl7eB7,
+    .css_dVi171,
+    .css_m69EV0 {
+      position: relative;
+    }
+
+    .css_dVi171 {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+
+    .css_VHp8wJ,
+    .css_ZsC2Dz,
+    .css_NXb48w,
+    .css_eQAQQy {
+      position: absolute;
+      pointer-events: none;
+      top: 8px;
+      left: 8px;
+      transition: all .25s ease-in-out;
+    }
+
+    .css_k1PtQv,
+    .css_FSp9ui,
+    .css_HhTfAl {
+      padding: .5rem;
+    }
+
+    .css_HhTfAl {
+      flex-grow: 1;
+    }
+
+    .css_m69EV0 {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+
+    .css_LLhob1 {
+      flex-grow: 1;
+      min-height: 100px;
+      padding: .5rem;
+      font-size: 1rem;
+      outline: 0;
+      border-radius: .5rem;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+
+    .css_LLhob1:focus {
+      border: 2px solid #00f;
+    }
+
+    .css_umVg0c {
+      margin-bottom: 1rem;
+    }
+
+    .css_sSa732 {
+      padding: .5rem 1rem;
+      border: 0;
+      background-color: #00f;
+      color: #fff;
+      font-weight: bold;
+      border-radius: .5rem;
+    }
+
+    input[type=text] {
+      border: 1px solid #ccc;
+      outline: 0;
+      border-radius: .5rem;
+    }
+
+    input[type=text]:focus {
+      border: 2px solid #00f;
+    }
+
+    .hide_placeholder {
+      top: -8px;
+      transform: scale(.8);
+      background-color: #fff;
+      padding: 0 .5rem;
+    }
+  </style>
+
+  <script>
+    // firstname
+    document.querySelector('.css_FSp9ui').addEventListener('focus', function () {
+      document.querySelector('.css_VHp8wJ').classList.add('hide_placeholder')
+    })
+    document.querySelector('.css_FSp9ui').addEventListener('blur', function (e) {
+      if(e.target.value) return
+      document.querySelector('.css_VHp8wJ').classList.remove('hide_placeholder')
+    })
+
+    // lastname
+    document.querySelector('.css_k1PtQv').addEventListener('focus', function () {
+      document.querySelector('.css_ZsC2Dz').classList.add('hide_placeholder')
+    })
+    document.querySelector('.css_k1PtQv').addEventListener('blur', function (e) {
+      if(e.target.value) return
+      document.querySelector('.css_ZsC2Dz').classList.remove('hide_placeholder')
+    })
+
+    // email
+    document.querySelector('.css_HhTfAl').addEventListener('focus', function () {
+      document.querySelector('.css_NXb48w').classList.add('hide_placeholder')
+    })
+    document.querySelector('.css_HhTfAl').addEventListener('blur', function (e) {
+      if(e.target.value) return
+      document.querySelector('.css_NXb48w').classList.remove('hide_placeholder')
+    })
+
+    // message
+    document.querySelector('.css_LLhob1').addEventListener('focus', function () {
+      document.querySelector('.css_eQAQQy').classList.add('hide_placeholder')
+    })
+    document.querySelector('.css_LLhob1').addEventListener('blur', function (e) {
+      if(e.target.value) return
+      document.querySelector('.css_eQAQQy').classList.remove('hide_placeholder')
+    })
+
+  </script>
+</body>
+
+</html>
